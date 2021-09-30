@@ -1,19 +1,21 @@
-package CS201Course.CS201_Assignments.Lab_3;
+package CS201CourseFolder.CS201_Assignments.Lab_3;
 
 import java.util.Scanner;
 
 public class Lab_3_Question_4 {
     public static void main(String[] args) {
-
-        System.out.println("Please enter your weight and I will tell you the calories you need");
+        //Asking the user to enter their weight and read the data
+        System.out.println("Please enter your weight and I will tell you the calories you need.");
         Scanner userInput = new Scanner(System.in);
         double weight = userInput.nextDouble();
-        if(weight > 0){
+        //Validating the given data
+        if (weight > 0) {
+            //Calculating the weight value given by 19
             double calories = weight * 19;
-            System.out.println("You need " + calories + " per day.");
+            System.out.println("You need " + calories + " Calories per day.");
         } else {
-        System.out.println("Wrong entry, weight can't be negative");
-}
+            System.out.println("Wrong entry, weight can't be negative");
+        }
 
 
     }
