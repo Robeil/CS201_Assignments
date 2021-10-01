@@ -18,18 +18,18 @@ public class Lab_3_Question_1 {
         System.out.println("Please enter the value of X and Y");
         int x = inputValue.nextInt();
         int y = inputValue.nextInt();
-        int squareRootB = x + 4 * ((int) Math.sqrt(y * y * y));
+        int squareRootB = x + 4 * ((int) Math.sqrt(y));
         System.out.println("This is the square root of B : " + squareRootB);
         //multiplying x by y and get the product in triple
         int product = x * y;
-        int squareRootC = product * product * product;
+        int squareRootC = (int) Math.cbrt(x * y);
         System.out.println("This is the square root of C : " + squareRootC);
         //Calculating the area of the circle
-        DecimalFormat deci = new DecimalFormat("0.000");
+        DecimalFormat decimal = new DecimalFormat("0.000");
         System.out.println("Please enter the value of R");
         int r = inputValue.nextInt();
         double area = Math.PI * (r * r);
-        System.out.println("The area of the circle : " + deci.format(area));
+        System.out.println("The area of the circle : " + decimal.format(area));
 
     }
 }

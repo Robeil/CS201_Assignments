@@ -11,14 +11,14 @@ public class Lab_3_Question_2 {
         DecimalFormat form = new DecimalFormat("0.00");
         double centimeterInput = userInput.nextDouble();
         //One inches is equals to 2.54 centimeters
-        double inch = 2.54;
+        final double INCH = 2.54;
         //One foot is equals to 12 inches
-        double foot = 12;
+        final double FOOT = 12;
         if (centimeterInput > 0) {
             //Converting centimeters to inches
-            double convertInch = centimeterInput / inch;
+            double convertInch = centimeterInput / INCH;
             //converting inches to foot
-            double convertFeet = convertInch / foot;
+            double convertFeet = convertInch / FOOT;
             System.out.print("Your height is " + form.format(convertInch) + " in inches and ");
             System.out.print(form.format(convertFeet) + " in feet.");
         } else {

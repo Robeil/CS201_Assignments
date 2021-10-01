@@ -14,7 +14,7 @@ public class Lab_3_Question_4 {
             double calories = weight * 19;
             System.out.println("You need " + calories + " Calories per day.");
         } else {
-            System.out.println("Wrong entry, weight can't be negative");
+            System.out.println("Wrong entry, weight can't be negative.");
         }
 
 

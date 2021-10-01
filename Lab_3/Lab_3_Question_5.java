@@ -14,11 +14,11 @@ public class Lab_3_Question_5 {
         //Creating the date formatter method to fetch the year only
         SimpleDateFormat currentYear = new SimpleDateFormat("yyyy");
         //Storing the user given year
-        int year = yearInput.nextInt();
+        int yearBorn = yearInput.nextInt();
         //Calculating the current year and the given year to know the age of the user
-        int currentAge = Integer.parseInt(currentYear.format(thisYear)) - year;
+        int currentAge = Integer.parseInt(currentYear.format(thisYear)) - yearBorn;
         //Printing out the user age to console
-        System.out.println("You are " + currentAge + " years old.");
+        System.out.println("You were born " + yearBorn + " and you will be " + currentAge + " this years.");
 
     }
 

@@ -15,6 +15,6 @@ public class Lab_3_Question_3 {
         //Converting to fahrenheit
         double fahrenheit = 1.8 * temp + 32;
         //Printing out the converted temperature to the console
-        System.out.println(fahrenheit + " Degree Fahrenheit");
+        System.out.println(fahrenheit + " Degree Fahrenheit.");
     }
 }
