@@ -63,7 +63,7 @@ public class CoffeeBag {
     public static void main(String[] args) {
 
         //Created bag for sale object
-        Assignment.Lab_4.CoffeeBag bagForSale = new Assignment.Lab_4.CoffeeBag(5,32);
+       CoffeeBag bagForSale = new CoffeeBag(5,32);
 
         //Printing out to the console
         System.out.println(bagForSale.toString());
