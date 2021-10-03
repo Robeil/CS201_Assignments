@@ -1,4 +1,6 @@
-package CS201_Assignments.Lab_4.Question_1;
+package CS201_Assignments.Lab_4.Quesion_2;
+
+import Assignment.Lab_4.WeightConverter;
 
 import java.text.DecimalFormat;
 
@@ -20,3 +22,4 @@ public class Main {
 
     }
 }
+
