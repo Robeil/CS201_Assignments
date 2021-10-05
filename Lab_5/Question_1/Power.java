@@ -17,29 +17,34 @@ public class Power {
         //Using switch to match the given to the names
         switch (givenNum) {
             case 6:
-                System.out.println("You entered " + power + " it is Million.");
+                System.out.println("You entered a number with " + power + "zeros & it is Million.");
                 break;
             case 9:
-                System.out.println("You entered " + power + " it is Billion.");
+                System.out.println("You entered a number with " + power + "zeros &  it is Billion.");
                 break;
             case 12:
-                System.out.println("You entered " + power + " it is Trillion.");
+                System.out.println("You entered a number with " + power + "zeros & it is Trillion.");
                 break;
             case 15:
-                System.out.println("You entered " + power + " it is Quadrillion.");
+                System.out.println("You entered a number with " + power + "zeros & it is Quadrillion.");
                 break;
             case 18:
-                System.out.println("You entered " + power + " it is Quintillion.");
+                System.out.println("You entered a number with " + power + "zeros & it is Quintillion.");
                 break;
             case 21:
-                System.out.println("You entered " + power + " it is Sextillion.");
+                System.out.println("You entered a number with " + power + "zeros & it is Sextillion.");
                 break;
             case 30:
-                System.out.println("You entered " + power + " it is Nonillion.");
+                System.out.println("You entered a number with " + power + "zeros & it is Nonillion.");
                 break;
             case 100:
-                System.out.println("You entered " + power + " it is Googol.");
+                System.out.println("You entered a number with " + power + "zeros & it is Googol.");
                 break;
+            default:
+                System.out.println("You enter weather below 6 or above 100 Sorry I can't handle it");
+                break;
+
+
         }
 
     }
