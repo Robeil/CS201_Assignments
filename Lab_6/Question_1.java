@@ -16,27 +16,31 @@
 //        }
 //    }
 //    //Question # B
-//    if(a ==b){
+//    if(a ==b)
+//
+//    {
 //        a = 1;
-//    } else if(c ==d){
+//    } else if(c ==d)
+//
+//    {
 //        b = 1;
-//    } else{
+//    } else
+//
+//    {
 //        c = 1;
 //    }
 //
-//   //Question # C
+//    //Question # C
 //    if(a ==b)
 //
 //    {
 //        if (c == d) {
 //            a = 1;
-//        } else {
 //            b = 2;
+//        } else {
+//            b = 1;
 //        }
-//    } else {
-//        b = 1;
 //    }
-//}
 //  //Question # D
 //
 //        if (a == b) {
@@ -45,11 +49,8 @@
 //                b = 2;
 //            } else {
 //                b = 1;
-//            }
-//
-//        } else if (a == d) {
+//            } else if (a == d) {
 //            d = 3;
 //        }
 //    }
 //}
-//
