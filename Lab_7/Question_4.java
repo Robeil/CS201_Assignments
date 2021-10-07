@@ -3,38 +3,36 @@ package CS201_Assignments.Lab_7;
 import java.util.Scanner;
 
 public class Question_4 {
+    public void primeNumber1(int number) {
+        Scanner input = new Scanner(System.in);
 
-    public Question_4() {
-
-    }
-
-    public void primeNumber(int number) {
-        Scanner inputNumber = new Scanner(System.in);
-        int i = 2;
-        boolean isPrime = false;
-
-        while (number > 0) {
-            if (number % i == 0) {
-                isPrime = true;
-                break;
+        boolean isPrime = true;
+        if (number > 0) {
+            for (int i = 2; i < number / 2; i++) {
+                if (number % i == 0) {
+                    isPrime = false;
+                    break;
+                }
+                i++;
             }
-            i++;
+        } else {
+            System.out.println("Goodbye, you entered negative ");
         }
         if (isPrime) {
             System.out.println(number + " is a prime number.");
         } else {
             System.out.println(number + " is not a prime number.");
-            System.out.println("Please try again.");
-            number = inputNumber.nextInt();
+            System.out.println("Try again negga");
+            number = input.nextInt();
         }
     }
 
     public static void main(String[] args) {
 
-        Scanner inputNumber = new Scanner(System.in);
-        System.out.println("Please enter any number then I will let you know if is prime or not.");
-        int number = inputNumber.nextInt();
-        Question_4 primeCheck = new Question_4();
-        primeCheck.primeNumber(number);
+        System.out.println("Please enter any number");
+        Scanner input = new Scanner(System.in);
+        int number = input.nextInt();
+        Question_4 firstPrime = new Question_4();
+        firstPrime.primeNumber1(number);
     }
 }
