@@ -11,15 +11,17 @@ public class Question_6 {
         int number = userInput.nextInt();
         int i = 1;
         int sum = 0;
-
+        System.out.print("The divisors are : ");
         while (i <= number / 2) {
             if (number % i == 0) {
                 sum += i;
+
+                System.out.print(i + " ");
             }
             i++;
         }
         if (sum == number) {
-            System.out.println(number + " is a perfect number");
+            System.out.println("\n" +number + " is a perfect number");
         } else
             System.out.println(number + " is not a  perfect number");
     }
