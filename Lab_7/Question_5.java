@@ -2,13 +2,13 @@ package CS201_Assignments.Lab_7;
 
 import java.util.Scanner;
 
-public class Question_5 {
+public class  Question_5 {
 
-    public void nPrimeCheck(int primeNumber) {
+    public void primeCheck(int inputNumber) {
 
         int counter = 1;
-        for (int i = 2; i < primeNumber / 2; i++) {
-            if (primeNumber % 2 == 0) {
+        for (int i = 2; i < inputNumber / 2; i++) {
+            if (inputNumber % 2 == 0) {
                 counter ++;
                 System.out.print(i + " ");
             }
@@ -21,10 +21,10 @@ public class Question_5 {
 
         System.out.println("Please enter any number.");
         Scanner input = new Scanner(System.in);
-        int primeNumber = input.nextInt();
+        int inputNumber = input.nextInt();
 
         Question_5 nPrime = new Question_5();
-        nPrime.nPrimeCheck(primeNumber);
+        nPrime.primeCheck(inputNumber);
 
     }
 }

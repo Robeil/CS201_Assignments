@@ -13,7 +13,6 @@ public class Question_4 {
                 isPrime = false;
                 break;
             }
-            i++;
         }
         return isPrime;
     }

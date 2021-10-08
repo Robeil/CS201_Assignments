@@ -12,23 +12,16 @@ public class Question_6 {
         int i = 1;
         int sum = 0;
 
-        while(i <= number/2)
-        {
-            if(number % i == 0)
-            {
+        while (i <= number / 2) {
+            if (number % i == 0) {
                 sum += i;
             }
             i++;
         }
-        if(sum == number)
-        {
-            System.out.println(number +" is a perfect number");
-        }
-        else
-            System.out.println(number +" is not a  perfect number");
+        if (sum == number) {
+            System.out.println(number + " is a perfect number");
+        } else
+            System.out.println(number + " is not a  perfect number");
     }
-
-
-
-    }
+}
 
