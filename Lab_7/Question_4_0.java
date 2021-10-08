@@ -18,6 +18,8 @@ public class Question_4_0 {
 
                 if (number % i == 0) {
                     isPrime = false;
+                    System.out.println(i + " ");
+                    System.out.println(number + " ");
                     break;
                 }
                 i++;

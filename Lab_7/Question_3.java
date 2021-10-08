@@ -9,13 +9,13 @@ public class Question_3 {
         int num = 10;
         //loop for looping 4 times in a raw
         for (int raw = 0; raw < 4; raw++) {
+
             //loop for looping 10 times in a column
             for (int column = 0; column < 10; column++) {
                 //printing num plus the column
                 System.out.print(num + " ");
                 num++;
             }
-
             //giving every number space in between
             System.out.println(" ");
         }

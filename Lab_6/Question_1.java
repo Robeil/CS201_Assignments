@@ -4,7 +4,7 @@
 //    public static void main(String[] args) {
 //        int a = 0, b = 0, c = 0, d = 0;
 //
-//        //Question # A
+//        @FIXME ==> Question # A
 //        if (a == b) {
 //            if (c == d) {
 //                a = 1;
@@ -15,7 +15,7 @@
 //            c = 1;
 //        }
 //    }
-//    //Question # B
+//     @FIXME ==> Question # B
 //    if(a ==b)
 //
 //    {
@@ -30,7 +30,7 @@
 //        c = 1;
 //    }
 //
-//    //Question # C
+//     @FIXME ==> Question # C
 //    if(a ==b)
 //
 //    {
@@ -41,8 +41,7 @@
 //            b = 1;
 //        }
 //    }
-//  //Question # D
-//
+//       @FIXME ==>  Question # D
 //        if (a == b) {
 //            if (c == d) {
 //                a = 1;

@@ -5,36 +5,40 @@ import java.util.Scanner;
 public class Question_1 {
     public static void main(String[] args) {
         // Question A:
-//        This loop should decrement (i--;)
-//        int x = 0, y = 0, a = 0, b = 0;
+//        @FIXME ==> This loop will be infinite
+//        @FIXME ==> so we need to change to decrement (i--;)
+//        @FIXME ==> variable "a" & "b" must initialize before we use them
 //        for(int i = 10; i > 0; i++){
 //            x = y;
 //            a = b;
 //        }
 
         //Question B:
-//        We should increment num++ In order to avoid from infinite looping
+//       @FIXME ==> We should increment num++ In order to avoid from infinite looping
+//       @FIXME ==> We have to use keyword "while" to util
+//        @FIXME ==> We have to initialize the variable name "num"  before we use
+//        @FIXME ==> there is logical error => it should be while(sum < 10000);
 //        int sum = 0;
-//        int num;
 //        Scanner scanner = new Scanner(System.in);
 //        do{
 //            num = scanner.nextInt();
 //            sum += num;
 //
-//        } while(sum > 10000);
+//        } util(sum > 10000);
 
         //Question C:
-//        This will not execute because of the logic error
-//        int x = 0;
-//        int a = 1, b = 2;
+//        @FIXME ==> variable "a" ,"b" $ "x" must initialize before we use them
+//        @FIXME ==>There is a logic error
 //        while(x < 1 && x > 10){
 //            a = b;
 //        }
 
         //Question D:
- //      This will be infinite because there is no increment inside the loop
-//        int a = 1, b = 2, x = 3, y = 4;
-//        while(a == b){
+        // @FIXME ==> variable "a" & "b" must initialize before we use them
+        // @FIXME ==> This won't print any thing because the semi-colleen terminate from execute further
+        // @FIXME ==> There is a Syntax error ";"
+//        while(a == b);
+//        {
 //            a = b;
 //            x = y;
 //        }
