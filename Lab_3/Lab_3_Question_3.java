@@ -1,4 +1,4 @@
-package CS201CourseFolder.CS201_Assignments.Lab_3;
+package CS201_Assignments.Lab_3;
 
 import java.text.SimpleDateFormat;
 import java.util.Scanner;

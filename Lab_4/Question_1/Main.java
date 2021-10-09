@@ -12,7 +12,7 @@ public class Main {
         WeightConverter moonWeight = new WeightConverter();
 
         //calling the  weight converter to convert the given weight
-        double yourWeight = moonWeight.convert(191);
+        double yourWeight = moonWeight.convert(196);
 
         //Printing the result to console
         System.out.println("This is your weight in moon " + decimalFormat.format(yourWeight));

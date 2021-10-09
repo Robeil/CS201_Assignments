@@ -1,4 +1,4 @@
-package CS201Course.CS201_Assignments.First_Assignment;
+package CS201_Assignments.First_Assignment;
 
 import java.util.Scanner;
 

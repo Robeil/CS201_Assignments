@@ -5,7 +5,7 @@ public class Main {
 
         //Created bag for sale object
        CoffeeBag bagForSale = new CoffeeBag(5,32);
-
+       bagForSale.setBagWeight(10);
         //Printing out to the console
         System.out.println(bagForSale.toString());
 
