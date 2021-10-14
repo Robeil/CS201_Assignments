@@ -124,3 +124,26 @@ public class Experiment_1 {
         }
     }
 }
+
+/**
+ for (int i = 0; i < monthly.length; i++) {
+
+
+        monthly[i] = new double[monthDay[i]];
+
+        //Getting for every month
+        for (j = 0; j < monthDay[i]; j++) {
+
+        monthly[i][j] = yearTemp[index];
+        //The hottest day in a month
+        if (monthly[i][j] > hottest) {
+        hottest = monthly[i][j];
+        }
+        //The coldest day in a month
+        if (monthly[i][j] < coldest) {
+        coldest = monthly[i][j];
+        }
+        index++;
+        }
+
+ */

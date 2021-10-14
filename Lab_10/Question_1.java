@@ -7,6 +7,35 @@ import java.util.Scanner;
 
 public class Question_1 {
 
+    public static void specialRequest(double[] yearTemp, int[] monthDay, int month, int day) {
+        String[] monthName = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
+        double requestedTemp = 0.0;
+        double[][] monthly = new double[monthDay.length][];
+
+        int index = 0;
+        double hottest = 0.0;
+        double coldest = 0.0;
+        for (int i = 0; i < monthly.length; i++) {
+            monthly[i] = new double[monthDay[i]];
+            //Getting for every month
+            for (int j = 0; j < monthDay[i]; j++) {
+                monthly[i][j] = yearTemp[index];
+                index++;
+            }
+            //picking requested month and date and giving the temperature
+
+            for (int k = month; k < monthly.length; k++) {
+
+                for (int d = day - 1; d < monthDay[k]; d++) {
+
+                    requestedTemp = monthly[i][k];
+                }
+            }
+        }
+        //Printing the output
+        System.out.println("Requested month is => " + monthName[month - 1] + " and date => " + day + " and the temperature is => " + requestedTemp);
+    }
+
     public static void hotAndCold(double[] yearTemp) {
 
         //Loop that find the hottest temperature in the year
@@ -39,6 +68,7 @@ public class Question_1 {
         double hottest = 0.0;
         double coldest = 0.0;
 
+
         //Getting the daily temp of the year
         for (int i = 0; i < monthly.length; i++) {
 
@@ -59,17 +89,8 @@ public class Question_1 {
                 }
                 index++;
             }
-            double requestedTemp = 0.0;
-            //picking requested month and date and giving the temperature
-            for (int k = month; k < monthly.length; k++) {
 
-                for (int d = day; d < monthDay[d]; d++) {
-                    requestedTemp = monthDay[d];
-                }
-            }
-
-            //Printing the output
-            System.out.println("Requested month is => " + monthName[month - 1] + " and date => " + day + " and the temperature is => " + requestedTemp);
+//          //Printing the output
             System.out.println("This is the hottest for the month ☀️ " + monthName[i] + " " + hottest);
             System.out.println("This is the coldest for the month ❄️ " + monthName[i] + " " + coldest);
             System.out.println(Arrays.toString(monthly[i]));
@@ -107,9 +128,9 @@ public class Question_1 {
             yearTemp[i] = (double) (random.nextInt(126));
         }
         Scanner input = new Scanner(System.in);
-        System.out.println("Please enter the month.");
+        System.out.println("Please enter the month and make sure is it from 1 -12.");
         int month = input.nextInt();
-        System.out.println("Please enter the day.");
+        System.out.println("Please enter the day and make sure is it from 1 -31.");
         int day = input.nextInt();
 
         if (month > 0 && month <= 12 && day > 0 && day <= 31) {
@@ -118,9 +139,9 @@ public class Question_1 {
             coldestTempYear(yearTemp);
             hottestTempYear(yearTemp);
             hotAndCold(yearTemp);
-            //pickMonthAndDay(yearTemp, monthDay, month, day);
+            specialRequest(yearTemp, monthDay, month, day);
         } else {
-            System.out.println("Wrong entry, try again");
+            System.out.println("Wrong entry, try again please!");
         }
     }
 }
