@@ -27,7 +27,7 @@ public class Question_2 {
 
         /**(a) -1  //FIXME ==> Error: Not zero and ==> Finally Clause Executed.
          * (b) 0  //FIXME ==>I am happy with the input ==> And Finally Clause Executed
-         *          *(c) 12xy  //FIXME ==>Invalid Entry ==> Finally Clause Executed
+         *(c) 12xy  //FIXME ==>Invalid Entry ==> Finally Clause Executed
          */
 
         exception_2();
