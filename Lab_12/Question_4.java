@@ -17,7 +17,7 @@ public class Question_4 {
 
         int index = 0;
 
-        recursiveReverse("Robeil", index);
+        recursiveReverse("robeil", index);
     }
 
 }

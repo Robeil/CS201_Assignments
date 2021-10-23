@@ -4,7 +4,7 @@ public class Question_2 {
 
     public static int minArray(int[] array, int index) {
 
-        int min = array[index];
+        int min = array[index]; // int min = 0;
         int nextNum;
 
         if (index == array.length - 1) {

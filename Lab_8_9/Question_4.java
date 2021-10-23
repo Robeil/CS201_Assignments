@@ -16,9 +16,9 @@ public class Question_4 {
         }
 
         if (word.equalsIgnoreCase(reversed)) {
-            System.out.println("==> " + word + " is a Palindrome");
+            System.out.println("==> " + word + " is a Palindrome.");
         } else {
-            System.out.println("==> " + word + " is NOT a Palindrome");
+            System.out.println("==> " + word + " is NOT a Palindrome.");
         }
     }
     public static void main(String[] args) {
@@ -26,8 +26,6 @@ public class Question_4 {
         System.out.println("Please enter any word.");
         Scanner input = new Scanner(System.in);
         String word = input.next();
-        boolean isEmpty = word.isEmpty();
-
 
         Question_4 checkOne = new Question_4();
         checkOne.isPalindrome(word);

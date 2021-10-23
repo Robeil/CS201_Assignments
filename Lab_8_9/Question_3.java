@@ -10,8 +10,10 @@ public class Question_3 {
         String newDna = "";
         char modified = ' ';
         dna.toUpperCase();
-        for (int i = 0; i < dna.length(); i++) {
-            if(dna.charAt(i) == 'A'){
+
+        for(int i = 0; i < dna.length(); i++){
+
+            if (dna.charAt(i) == 'A'){
                 modified = 'T';
             } else if(dna.charAt(i) == 'T'){
                 modified = 'A';
